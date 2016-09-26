@@ -18,10 +18,16 @@ public class ex03_105021032 {
         int c=sca.nextInt();
         int d=sca.nextInt();
         int e=sca.nextInt();
+	int e=(c*60+d)-(a*60-b)/30;
+        int o=0;
+        if(e<=4){o=e*30;
         
-        
-	     
-        
+        }
+        else if(8<e && e<4){o=120+(e-4)*40;
 	}
-
+        else{o=120+160+(e-8*60);
+        }
+        System.out.print(o);
+	}
 }
+ 
